@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scrollable and Fixed Columns</title>
+<style>
+    .container {
+        display: flex;
+    }
+    .scrollable {
+        flex: 1;
+        overflow-y: scroll;
+        height: 300px; /* Set the height as needed */
+        border: 1px solid #ccc;
+    }
+    .fixed {
+        width: 200px; /* Set the width as needed */
+        position: sticky;
+        top: 0;
+        background-color: #f1f1f1;
+        border: 1px solid #ccc;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="scrollable">
+        <h2>Scrollable Column</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam eu justo fermentum scelerisque.</p>
+        <!-- Add more content here -->
+    </div>
+    <div class="fixed">
+        <h2>Fixed Column</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam eu justo fermentum scelerisque.</p>
+        <!-- Add more content here -->
+    </div>
+</div>
+
+</body>
+</html>
